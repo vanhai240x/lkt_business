@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="/css/index.css">
 
-    <title>Title</title>
+    <title>My Library</title>
 </head>
 
 <body>
@@ -24,6 +24,52 @@
 
     <div class="container">
         <h1>Start Project</h1>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Collapsible</h1>
+        <button class="collapsible">Open Section 1</button>
+        <div class="content-collapse">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Open Section 2</button>
+        <div class="content-collapse">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Open Section 3</button>
+        <div class="content-collapse">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Load element when scroll down</h1>
+        <h2 class="visible-top-to-bottom">Visible when scroll down from top to bottom</h2>
+        <h2 class="visible-bottom-to-top">Visible when scroll down from bottom to top</h2>
+        <h2 class="visible-left-to-right">Visible when scroll down from left to right</h2>
+        <h2 class="visible-right-to-left">Visible when scroll down from right to left</h2>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Galarry Slideshow</h1>
+        <div class="left-side gallery">
+            <div class="main-image">
+                <img id="featured" src="./image/news-1.jpg" alt="">
+            </div>
+            <div id="slide-wrapper">
+                <img src="./image/slide-left.png" alt="slide left" id="slideLeft" class="arrow" onclick="toLeft()">
+                <div id="slider">
+                    <img class="thumbnail active" src="./image/news-1.jpg" alt="">
+                    <img class="thumbnail" src="./image/news-2.jpg" alt="">
+                    <img class="thumbnail" src="./image/news-3.jpg" alt="">
+                    <img class="thumbnail" src="./image/news-1.jpg" alt="">
+                    <img class="thumbnail" src="./image/news-2.jpg" alt="">
+                    <img class="thumbnail" src="./image/news-3.jpg" alt="">
+                </div>
+                <img src="./image/slide-right.png" alt="slide right" id="slideRight" class="arrow" onclick="toRight()">
+            </div>
+
+        </div>
     </div>
 
     <!-- Start: Footer -->
