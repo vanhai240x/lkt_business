@@ -131,3 +131,17 @@ function showMoreProduct(e) {
     $('.index-page .product .container .wrapper-btn-border').remove();
     $('.index-page .product .container .wrapper-btn-border:first-child').remove();
 }
+
+// Back to top
+$('#back-top').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+})
+
+// Scroll to div by href="#..."
+var headerHeight = $('.header').outerHeight();
+$('a[href^="#"]').click(function() {
+    var href = $(this).attr("href");
+    var target = $(href);
+    var position = target.offset().top - headerHeight;
+    $('body,html').stop().animate({ scrollTop: position }, 1000);
+});
