@@ -102,3 +102,15 @@ $('.btn-search').click(function(e) {
         document.getElementById("formSearch").submit();
     }
 })
+
+function viewGrid() {
+    $('#products .line-1 .wrapper-btn button').removeClass('active');
+    $('.grid-view').addClass('active');
+    $('#products .wrapper-item').removeClass('list');
+}
+
+function viewList() {
+    $('#products .line-1 .wrapper-btn button').removeClass('active');
+    $('.list-view').addClass('active');
+    $('#products .wrapper-item').addClass('list');
+}
