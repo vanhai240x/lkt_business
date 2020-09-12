@@ -569,10 +569,12 @@ ul {
   font-size: 13px;
 }
 .footer .partner {
-  padding: 20px 0 50px;
+  padding: 40px 0;
   background: #f9f9f9;
 }
 .footer .partner .section-title {
+  margin-bottom: 50px;
+  font-size: 16px;
   font-weight: 400;
 }
 .footer .partner .item {
@@ -1197,6 +1199,63 @@ ul {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+  }
+}
+#introduce {
+  margin-bottom: 50px;
+}
+#introduce .banner {
+  margin-top: -90px;
+  margin-bottom: 30px;
+}
+#introduce h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #555;
+  text-align: center;
+}
+#introduce .section-disc {
+  color: #555;
+}
+#introduce .wrapper-item {
+  padding: 20px 0 0;
+  border-top: 1px solid #f9f9f9;
+  margin-top: 20px;
+}
+#introduce .wrapper-item .item {
+  margin-bottom: 20px;
+}
+#introduce .wrapper-item .item .title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #555;
+  line-height: 38px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#introduce .wrapper-item .item .title::before {
+  content: "";
+  width: 50px;
+  display: block;
+  bottom: 0;
+  position: absolute;
+  border-bottom: 2px solid #e25440;
+}
+#introduce .wrapper-item .item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #555;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+@media (min-width: 640px) {
+  #introduce .wrapper-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  #introduce .wrapper-item .item {
+    width: 30%;
   }
 }
 

@@ -5,4 +5,14 @@
 @import '../pages/layout/header';
 @import '../pages/layout/footer';
 @import './index';
+@import './introduce';
+// Responsive
+@media (min-width: 640px) {}
+
+@media (min-width: 960px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1600px) {}
+
 // sass --watch scss/pages/app.scss:css/app.css
