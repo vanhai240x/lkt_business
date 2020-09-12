@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/uikit-3.4.1/css/uikit.min.css">
 
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/app.css">
 
     <title>My Library</title>
 </head>
@@ -22,58 +25,354 @@
 <body>
 
     <!-- Start: Header -->
+    <header class="header">
+        <div class="top">
+            <div class="uk-container uk-flex uk-flex-between">
+                <div class="left">
+                    <ul class="uk-flex">
+                        <li>
+                            <a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tel">
+                            <a href="tel:+0985 984 021" title="Hotline: 0985 984 021">Hotline: 0985 984 021</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right uk-flex">
+                    <form id="formSearch" class="uk-flex" action="">
+                        <input class="input-search" type="text" placeholder="Từ khóa ..." required>
+                        <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <a href="#" class="btn-register uk-visible@m"><i class="fa fa-user" aria-hidden="true"></i>Đăng ký</a>
+                    <a href="#" class="btn-login uk-visible@m"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-sp uk-container uk-hidden@m uk-flex">
+            <h1 class="left uk-flex uk-flex-center uk-flex-middle">
+                <a class="uk-flex uk-flex-center uk-flex-middle" href="/"><img src="./image/logo.png" alt="LKL Business"></a>
+            </h1>
+            <div class="right uk-flex uk-flex-right uk-flex-middle">
+                <a href="#" class="cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="number">0</span>
+                </a>
+                <div class="burger" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="close" onclick="closeMenu()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Dịch Vụ</a>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="#">Tin Tức</a>
+                </li>
+                <li>
+                    <a href="#">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-pc uk-visible@m">
+            <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
+                <h1 class="uk-flex uk-flex-center uk-flex-middle">
+                    <a class="uk-flex uk-flex-center uk-flex-middle" href="/"><img src="./image/logo.png" alt="LKL Business"></a>
+                </h1>
+                <nav class="nav uk-flex uk-flex-right uk-flex-middle">
+                    <ul class="uk-flex uk-flex-right">
+                        <li>
+                            <a class="active" href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Dịch Vụ</a>
+                        </li>
+                        <li>
+                            <a href="#">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin Tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="number">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
     <!-- End: Header -->
 
-    <div class="container">
-        <h1>Start Project</h1>
-    </div>
-    <hr>
-    <div class="container">
-        <h1>Collapsible</h1>
-        <button class="collapsible">Open Section 1</button>
-        <div class="content-collapse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible">Open Section 2</button>
-        <div class="content-collapse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible">Open Section 3</button>
-        <div class="content-collapse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <h1>Load element when scroll down</h1>
-        <h2 class="visible-top-to-bottom">Visible when scroll down from top to bottom</h2>
-        <h2 class="visible-bottom-to-top">Visible when scroll down from bottom to top</h2>
-        <h2 class="visible-left-to-right">Visible when scroll down from left to right</h2>
-        <h2 class="visible-right-to-left">Visible when scroll down from right to left</h2>
-    </div>
-    <hr>
-    <div class="container">
-        <h1>Galarry Slideshow</h1>
-        <div class="left-side gallery">
-            <div class="main-image">
-                <img id="featured" src="./image/news-1.jpg" alt="">
-            </div>
-            <div id="slide-wrapper">
-                <img src="./image/slide-left.png" alt="slide left" id="slideLeft" class="arrow" onclick="toLeft()">
-                <div id="slider">
-                    <img class="thumbnail active" src="./image/news-1.jpg" alt="">
-                    <img class="thumbnail" src="./image/news-2.jpg" alt="">
-                    <img class="thumbnail" src="./image/news-3.jpg" alt="">
-                    <img class="thumbnail" src="./image/news-1.jpg" alt="">
-                    <img class="thumbnail" src="./image/news-2.jpg" alt="">
-                    <img class="thumbnail" src="./image/news-3.jpg" alt="">
+    <div id="index">
+        <section class="regular banner">
+            <img src="./image/slideshow_1.jpg" alt="Slide 1">
+            <img src="./image/slideshow_2.jpg" alt="Slide 2">
+            <img src="./image/slideshow_3.jpg" alt="Slide 3">
+        </section>
+        <div class="service">
+            <div class="uk-container">
+                <h3 class="section-title">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <p class="section-disc">Trên hết, chúng tôi mong muốn đem đến cho các khách hàng, đối tác của mình những sản phẩm, dịch vụ với chất lượng vượt trội. Chọn chúng tôi, bạn hoàn toàn có thể yên tâm về một trang web xứng tầm, xác lập được vị thế của doanh nghiệp bạn
+                    trên thị trường.</p>
+                <div class="wrapper-item">
+                    <div class="item">
+                        <div class="image">
+                            <img src="./image/home_service_1_img.png" alt="Thiết kế Website">
+                        </div>
+                        <div class="content">
+                            <a href="#">Thiết kế Website</a>
+                            <p>Chúng tôi tư vấn, thiết kế website chuyên nghiệp thể hiện văn hóa riêng của doanh nghiệp cũng như phong cách của mỗi cá nhân, website của bạn luôn được thiết kế trên nền tảng những công nghệ tiên tiến nhất</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./image/home_service_2_img.png" alt="Nâng cấp Website">
+                        </div>
+                        <div class="content">
+                            <a href="#">Nâng cấp Website</a>
+                            <p>Chúng tôi nâng cấp và tối ưu hóa để giúp website của bạn có được giao diện hiện đại, cải thiện tốc độ và tương thích với các thiết bị di động, bổ sung thêm các tính năng mà bạn mong muốn</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="./image/home_service_3_img.png" alt="Thiết kế Website">
+                        </div>
+                        <div class="content">
+                            <a href="#">Hệ thống Backlink</a>
+                            <p>Được xây dựng từ những domain uy tín và thứ hạng cao, nội dung website được kiểm soát chặt chẽ, chúng tôi mạng đến cho bạn những backlink thực sự bền vững và chất lượng</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="./image/slide-right.png" alt="slide right" id="slideRight" class="arrow" onclick="toRight()">
+            </div>
+        </div>
+        <div class="we-are">
+            <div class="uk-container">
+                <h3 class="section-title">Chúng tôi là ai?</h3>
+                <p class="section-disc">Team Liên Kết Trẻ tập hợp những lập trình viên trẻ tuổi, nhiệt huyết và có tinh thần trách nhiệm cao trong công việc, có trình độ cao trong lĩnh vực thiết kế website và internet marketting, được hỗ trợ bởi những thành viên có kinh nghiệm
+                    lâu năm, chúng tôi tự tin mang đến cho khách hàng những sản phẩm và dịch vụ tốt nhất.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="uk-container">
+                <h3 class="section-title">DỰ ÁN NỔI BẬT</h3>
+                <p class="section-disc">Liên Kết Trẻ chuyên về giải pháp website doanh nghiệp chất lượng cao. Với niềm đam mê tạo ra những website ấn tượng, tinh tế, mỗi website là một tác phẩm mà chúng tôi mong muốn dành tặng riêng cho khách hàng.</p>
+                <a href="#" class="btn-view-all">Xem tất cả Dự Án</a>
+                <div class="wrapper-item">
+                    <div class="item">
+                        <a href="#"><img src="./image/website-san-pham-1_large.png" alt=""></a>
+                        <a class="name" href="#">Website Bán Hàng 01</a>
+                        <p class="price italic">Giá: vui lòng liên hệ</p>
+                        <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
+                            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
+                            <a href="#" class="btn">Chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./image/web-site-ban-hang-02_large.jpg" alt=""></a>
+                        <a class="name" href="#">Website Bán Hàng 02</a>
+                        <p class="price">1,000,000₫</p>
+                        <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
+                            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
+                            <a href="#" class="btn">Chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./image/website-ban-hang-03_large.jpg" alt=""></a>
+                        <a class="name" href="#">Website Bán Hàng 03</a>
+                        <p class="price">1,000,000₫</p>
+                        <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
+                            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
+                            <a href="#" class="btn">Chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="./image/website-doanh-nghiep-01_large.png" alt=""></a>
+                        <a class="name" href="#">Website Bán Hàng 01</a>
+                        <p class="price">1,000,000₫</p>
+                        <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
+                            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
+                            <a href="#" class="btn">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-news">
+            <div class="uk-container">
+                <div class="comment">
+                    <h3 class="title">NHẬN XÉT CỦA KHÁCH HÀNG</h3>
+                    <section class="regular">
+                        <div class="block">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./image/avatar-aothun_large.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Với nhiều giá trị cơ hội cần triển khai, chúng tôi cần 1 giải pháp và hệ thống vững mạnh để tự tin đẩy doanh số<br> Anh
+                                        <b> Phương Nam</b> - Chủ tịch và sáng lập <span class="red">Aothun.vn</span></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./image/avatar-juno_large.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Hệ thống backend ecommerce linh hoạt, dễ dàng triển khai và sử dụng giúp tôi thực sự an tâm tập trung vào kinh doanh<br> Anh
+                                        <b> Quốc Tuấn</b> - Phó giám đốc <span class="red">Chuỗi cửa hàng Juno</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./image/chibao_large.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Với Haravan, Hiểu về trái tim đã thay đổi cách đóng góp truyền thống, giúp cho bất cứ ai cũng có thể tham gia thay đổi cuộc sống của những người bất hạnh trong xã hội. Một đóng góp nhỏ cũng có thể tạo nên thay đổi lớn<br>Diễn
+                                        viên / Doanh nhân
+                                        <b> Chi Bảo</b> - Sáng lập Mạng xã hội quốc gia <span class="red">Hiểu về trái tim</span></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./image/avatar-ibasic_large.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Haravan giúp chúng tôi nâng cao hiệu quả bán hàng online, không còn nặng đầu về kỹ thuật để tập trung hoàn toàn vào phát triển ý tưởng kinh doanh <br>Chị
+                                        <b>Thu Hiền</b> - Giám đốc kinh doanh Chuỗi cửa hàng <span class="red">iBasic Việt Nam </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="./image/75326556-thu-nga_large.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <p>Sau khi hợp tác với Liên Kết Trẻ, chúng tôi đã có một website vận hành rất tốt và hoàn toàn hài lòng về dịch vụ của Liên Kết Trẻ trong quá trình triển khai cũng như dịch vụ hỗ trợ sau khi website vận hành chính thức.<br>Chị
+                                        <b>Trương Thị Thu Nga</b> - Giám Đốc <span class="red">ThienNgaCorp</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="news">
+                    <h3 class="title">TIN TỨC</h3>
+                    <a href="#">Website có quảng cáo dụ cài ứng dụng di động sẽ bị google phạt</a>
+                    <div class="excerpt">
+                        <img src="./image/phat-web-ung-dung-quang-cao.jpg">Đó là tuyên bố của Google sau cuộc khảo sát nội bộ của họ. Theo đó, từ ngày 1/11/2015, các website có các đoạn quảng cáo dụ người dùng cài các ứng dung trên di động sẽ bị Google
+                        phạt vì nó ảnh hưởng lớn tới trải nghiệm của người dùng.</div>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Việt Nam dẫn đầu trong cuộc tập trận về an ninh mạng</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Bất ngờ với lý do thành lập Facebook của Mark Zuckerberg</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Google biến ước mơ của cụ bà 97 tuổi thành hiện thực</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Facebook bỏ phần 'Khác' trong mục tin nhắn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Start: Footer -->
+    <footer class="footer">
+        <div class="partner">
+            <div class="uk-container">
+                <h3 class="section-title">ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI</h3>
+                <section class="regular">
+                    <div class="item"><img src="./image/5giay_hover_large.png" alt=""></div>
+                    <div class="item"><img src="./image/ahamove_hover_large.png" alt=""></div>
+                    <div class="item"><img src="./image/cafebizlogo_large.png" alt=""></div>
+                    <div class="item"><img src="./image/logo_haravan_new1_large.png" alt=""></div>
+                    <div class="item"><img src="./image/ibasic_hover_large.png" alt=""></div>
+                    <div class="item"><img src="./image/logo-intel-hover1_large.png" alt=""></div>
+                    <div class="item"><img src="./image/juno_hover_large.png" alt=""></div>
+                    <div class="item"><img src="./image/logo-viettel_large.png" alt=""></div>
+                    <div class="item"><img src="./image/ibasic_hover_large.png" alt=""></div>
+                    <div class="item"><img src="./image/logo-intel-hover1_large.png" alt=""></div>
+                </section>
+            </div>
+        </div>
+        <div class="top">
+            <div class="uk-container">
+                <div class="block">
+                    <h4 class="title">LIÊN KẾT NHANH</h4>
+                    <ul class="menu">
+                        <li><a href="/" title="Trang Chủ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Trang Chủ</a></li>
+                        <li><a href="#" title="Giới thiệu"><i class="fa fa-chevron-right" aria-hidden="true"></i>Giới thiệu</a></li>
+                        <li><a href="#" title="Sản Phẩm"><i class="fa fa-chevron-right" aria-hidden="true"></i>Sản Phẩm</a></li>
+                        <li><a href="#" title="Dịch Vụ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Dịch Vụ</a></li>
+                        <li><a href="#" title="Liên Hệ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="block uk-visible@m">
+                    <h4 class="title">ĐĂNG KÝ NHẬN TIN</h4>
+                    <p>Cơ hội cập nhật kịp thời những bài viết mới nhất trên blog, các dự án nổi bật và ưu đãi đặc biệt từ Chúng tôi.</p>
+                    <form action="">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit">Đăng ký nhận tin</button>
+                    </form>
+                </div>
+                <div class="block uk-visible@m">
+                    <h4 class="title">LIÊN KẾT VỚI CHÚNG TÔI</h4>
+                    <div class="wrapper-iframe">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flienkettreteam%2F&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&adapt_container_width=true&show_facepile=true&appId=239896576914077"
+                            width="340" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4 class="title">LIÊN HỆ</h4>
+                    <p>Team Liên Kết Trẻ<br> Hotline: 0985 984 021<br> Email: info@lienkettre.com<br> Website: www.lienkettre.com</p>
+                    <div class="wrapper-card">
+                        <img src="./image/icon-cc-visa.png" alt="Visa">
+                        <img src="./image/icon-cc-mastercard.png" alt="Mastercard">
+                        <img src="./image/icon-cc-amex.png" alt="American Express">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="uk-container">
+                <p>Bản quyền được đăng ký © 2020 cho LKT-Business | Powered by Haravan</p>
+            </div>
+        </div>
+    </footer>
     <!-- End: Footer -->
 
     <!-- jQuery first, then Popper -->

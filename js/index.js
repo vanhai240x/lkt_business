@@ -1,16 +1,38 @@
 $(document).ready(() => {
-    $(".regular").slick({
-        dots: true,
+    $("#index .banner").slick({
+        dots: false,
         infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 6,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+    });
+    $("#index .comment .regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+    $(".partner .regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
         responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
                     infinite: true,
                     dots: true
                 }
@@ -18,8 +40,7 @@ $(document).ready(() => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToShow: 2,
                     infinite: true,
                     dots: true
                 }
@@ -28,7 +49,6 @@ $(document).ready(() => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
                     infinite: true,
                     dots: true
                 }
@@ -74,21 +94,6 @@ function scroolDown() {
     });
 }
 
-// Collapse
-let coll = document.getElementsByClassName("collapsible");
-
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
-}
-
 // Gallery Slideshow
 let thumbnail = document.getElementsByClassName('thumbnail');
 let activeImages = document.getElementsByClassName('thumbnail active');
@@ -125,23 +130,7 @@ function toRight() {
     document.getElementById('slider').scrollLeft += 100;
 }
 
-function showMoreProduct(e) {
-    e.preventDefault();
-    $('.index-page .product .container .wrapper-item .item').removeClass('hide');
-    $('.index-page .product .container .wrapper-btn-border').remove();
-    $('.index-page .product .container .wrapper-btn-border:first-child').remove();
-}
-
 // Back to top
 $('#back-top').click(function() {
     $("html, body").animate({ scrollTop: 0 }, 1000);
 })
-
-// Scroll to div by href="#..."
-var headerHeight = $('.header').outerHeight();
-$('a[href^="#"]').click(function() {
-    var href = $(this).attr("href");
-    var target = $(href);
-    var position = target.offset().top - headerHeight;
-    $('body,html').stop().animate({ scrollTop: position }, 1000);
-});
