@@ -178,51 +178,6 @@
             }
         }
     }
-    .navigation {
-        margin: 10px 0 30px;
-        text-align: center;
-        span {
-            &.pages {
-                line-height: 25px;
-            }
-            &.current {
-                width: 25px;
-                background: #e25440;
-                color: #ffffff;
-            }
-        }
-        a,
-        .current {
-            text-align: center;
-            text-decoration: none;
-            font-size: 15.4px;
-            height: 25px;
-            line-height: 25px;
-            margin-left: 8px;
-            display: inline-block;
-            background: #ddd;
-            color: #333;
-            border-radius: 2px;
-            padding: 0 5px;
-            transition: .3s all ease;
-            -webkit-transition: .3s all ease;
-            -moz-transition: .3s all ease;
-            -ms-transition: .3s all ease;
-            -o-transition: .3s all ease;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            -ms-border-radius: 2px;
-            -o-border-radius: 2px;
-        }
-        .page-number {
-            width: 25px;
-            padding: 0;
-        }
-        a:hover {
-            background: #e25440;
-            color: #ffffff;
-        }
-    }
     .menu {
         .tab {
             h1 {

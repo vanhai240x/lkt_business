@@ -1,0 +1,169 @@
+#news {
+    .news {
+        .img {
+            display: block;
+            margin-bottom: 20px;
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                a {
+                    color: #333333;
+                }
+            }
+            .meta {
+                background: url('../../image/bg-title-about.png');
+                margin-bottom: 20px;
+                font-size: 0;
+                .date {
+                    display: inline;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    color: #868686;
+                    background-color: #ffffff;
+                    padding-right: 15px;
+                    border-right: 1px solid #868686;
+                    display: inline-block;
+                    line-height: 1.2;
+                    margin: 0;
+                }
+                .category {
+                    display: inline;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    color: #f00;
+                    background-color: #ffffff;
+                    padding: 0 15px;
+                    display: inline-block;
+                    line-height: 1.2;
+                    margin: 0;
+                    padding: 0 15px;
+                }
+            }
+            .p1 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                color: #3e3e3e;
+                text-align: justify;
+            }
+            .view-detail {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                border-top: 1px solid #c5c5c5;
+                color: #f00;
+                display: inline-block;
+                line-height: 2;
+                padding-right: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .main-news {
+        margin-bottom: 40px;
+    }
+    .sub-news .news {
+        display: flex;
+        margin-bottom: 20px;
+        .img {
+            width: 40%;
+            padding-right: 5%;
+        }
+        .content {
+            width: 60%;
+            h2 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .meta {
+                margin-bottom: 10px;
+                .date,
+                .category {
+                    font-size: 10px;
+                    padding: 0 5px;
+                }
+            }
+            .p1 {
+                font-size: 12px;
+                margin: 5px 0;
+            }
+            .view-detail {
+                font-size: 13px;
+            }
+        }
+    }
+    .navigation {
+        margin-bottom: 40px;
+    }
+}
+
+// Responsive
+@media (min-width: 640px) {
+    #news {
+        .main-news .news {
+            display: flex;
+            .img {
+                margin-right: 30px;
+                width: calc(50% - 30px);
+            }
+            .content {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #news {
+        .main-news .news {
+            .content {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .sub-news {
+            display: flex;
+            flex-wrap: wrap;
+            .news {
+                flex-direction: column;
+                width: 31%;
+                margin-right: 3.5%;
+                margin-bottom: 40px;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                .img {
+                    width: 100%;
+                    padding-right: 0;
+                }
+                .content {
+                    width: 100%;
+                    h2 {
+                        font-size: 18px;
+                    }
+                    .meta {
+                        .date,
+                        .category {
+                            font-size: 14px;
+                        }
+                    }
+                    .p1 {
+                        font-size: 14px;
+                    }
+                    .view-detail {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1600px) {}
