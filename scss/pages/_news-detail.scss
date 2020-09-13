@@ -1,6 +1,9 @@
-#services-detail {
+#news-detail {
     .left {
         margin-bottom: 40px;
+        .wrapper-img {
+            text-align: center;
+        }
         .name {
             font-family: 'Open Sans', sans-serif;
             font-size: 22px;
@@ -25,12 +28,16 @@
             text-align: justify;
             margin: 15px 0;
         }
+        .red {
+            color: #f45b4f;
+            text-decoration: none;
+        }
         .light {
             font-family: 'Open Sans', sans-serif;
             font-size: 14px;
             color: #555555;
             text-align: justify;
-            margin: 0 0 45px;
+            margin: 0 0 15px;
         }
         .wrapper-social {
             .item {
@@ -173,14 +180,15 @@
 @media (min-width: 640px) {}
 
 @media (min-width: 960px) {
-    #services-detail {
+    #news-detail {
         .uk-container {
             display: flex;
             .left {
                 width: 67%;
                 margin-right: 3%;
                 >img {
-                    width: 100%;
+                    display: block;
+                    margin: auto;
                 }
             }
             .right {
