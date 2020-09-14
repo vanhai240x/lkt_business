@@ -1,0 +1,36 @@
+#cart {
+    min-height: calc(100vh - 830px);
+    .page-title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        margin: 40px 0 20px;
+        color: #e25440;
+        border-bottom: 1px solid #ddd;
+        line-height: 34px;
+    }
+    .content {
+        .empty {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: #555555;
+            font-weight: 600;
+        }
+    }
+}
+
+// Responsive
+@media (min-width: 640px) {
+    #cart {
+        min-height: calc(100vh - 627px);
+    }
+}
+
+@media (min-width: 960px) {
+    #cart {
+        min-height: calc(100vh - 618px);
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1600px) {}

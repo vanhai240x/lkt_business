@@ -2564,5 +2564,33 @@ ul {
     width: 48%;
   }
 }
+#cart {
+  min-height: calc(100vh - 830px);
+}
+#cart .page-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin: 40px 0 20px;
+  color: #e25440;
+  border-bottom: 1px solid #ddd;
+  line-height: 34px;
+}
+#cart .content .empty {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #555555;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  #cart {
+    min-height: calc(100vh - 627px);
+  }
+}
+@media (min-width: 960px) {
+  #cart {
+    min-height: calc(100vh - 618px);
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

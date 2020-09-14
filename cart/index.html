@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Assets CSS -->
+    <link rel="stylesheet" href="../assets/slick/slick.css">
+    <link rel="stylesheet" href="../assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/uikit-3.4.1/css/uikit.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/app.css">
+
+    <title>Giỏ Hàng</title>
+</head>
+
+<body>
+
+    <!-- Start: Header -->
+    <header class="header">
+        <div class="top">
+            <div class="uk-container uk-flex uk-flex-between">
+                <div class="left">
+                    <ul class="uk-flex">
+                        <li>
+                            <a href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tel">
+                            <a href="tel:+0985 984 021" title="Hotline: 0985 984 021">Hotline: 0985 984 021</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right uk-flex">
+                    <form id="formSearch" class="uk-flex" action="">
+                        <input class="input-search" type="text" placeholder="Từ khóa ..." required>
+                        <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <a href="#" class="btn-register uk-visible@m"><i class="fa fa-user" aria-hidden="true"></i>Đăng ký</a>
+                    <a href="#" class="btn-login uk-visible@m"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-sp uk-container uk-hidden@m uk-flex">
+            <h1 class="left uk-flex uk-flex-center uk-flex-middle">
+                <a class="uk-flex uk-flex-center uk-flex-middle" href="/"><img src="../image/logo.png" alt="LKL Business"></a>
+            </h1>
+            <div class="right uk-flex uk-flex-right uk-flex-middle">
+                <a href="#" class="cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="number">0</span>
+                </a>
+                <div class="burger" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="close" onclick="closeMenu()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="/">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="/introduce">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="/services">Dịch Vụ</a>
+                </li>
+                <li>
+                    <a href="/products">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="/news">Tin Tức</a>
+                </li>
+                <li>
+                    <a href="/contact">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-pc uk-visible@m">
+            <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
+                <h1 class="uk-flex uk-flex-center uk-flex-middle">
+                    <a class="uk-flex uk-flex-center uk-flex-middle" href="/"><img src="../image/logo.png" alt="LKL Business"></a>
+                </h1>
+                <nav class="nav uk-flex uk-flex-right uk-flex-middle">
+                    <ul class="uk-flex uk-flex-right">
+                        <li>
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="/introduce">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="/services">Dịch Vụ</a>
+                        </li>
+                        <li>
+                            <a href="/products">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="/news">Tin Tức</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <a href="/cart" class="cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="number">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End: Header -->
+
+    <div id="cart">
+        <div class="uk-container">
+            <h1 class="page-title">Giỏ Hàng</h1>
+            <div class="content">
+                <h2 class="empty">Giỏ hàng rỗng</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start: Footer -->
+    <footer class="footer">
+        <div class="partner">
+            <div class="uk-container">
+                <h3 class="section-title">ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI</h3>
+                <section class="regular">
+                    <div class="item"><img src="../image/5giay_hover_large.png" alt=""></div>
+                    <div class="item"><img src="../image/ahamove_hover_large.png" alt=""></div>
+                    <div class="item"><img src="../image/cafebizlogo_large.png" alt=""></div>
+                    <div class="item"><img src="../image/logo_haravan_new1_large.png" alt=""></div>
+                    <div class="item"><img src="../image/ibasic_hover_large.png" alt=""></div>
+                    <div class="item"><img src="../image/logo-intel-hover1_large.png" alt=""></div>
+                    <div class="item"><img src="../image/juno_hover_large.png" alt=""></div>
+                    <div class="item"><img src="../image/logo-viettel_large.png" alt=""></div>
+                    <div class="item"><img src="../image/ibasic_hover_large.png" alt=""></div>
+                    <div class="item"><img src="../image/logo-intel-hover1_large.png" alt=""></div>
+                </section>
+            </div>
+        </div>
+        <div class="top">
+            <div class="uk-container">
+                <div class="block">
+                    <h4 class="title">LIÊN KẾT NHANH</h4>
+                    <ul class="menu">
+                        <li><a href="/" title="Trang Chủ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Trang Chủ</a></li>
+                        <li><a href="/introduce" title="Giới thiệu"><i class="fa fa-chevron-right" aria-hidden="true"></i>Giới thiệu</a></li>
+                        <li><a href="/products" title="Sản Phẩm"><i class="fa fa-chevron-right" aria-hidden="true"></i>Sản Phẩm</a></li>
+                        <li><a href="/services" title="Dịch Vụ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Dịch Vụ</a></li>
+                        <li><a href="/contact" title="Liên Hệ"><i class="fa fa-chevron-right" aria-hidden="true"></i>Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="block uk-visible@m">
+                    <h4 class="title">ĐĂNG KÝ NHẬN TIN</h4>
+                    <p>Cơ hội cập nhật kịp thời những bài viết mới nhất trên blog, các dự án nổi bật và ưu đãi đặc biệt từ Chúng tôi.</p>
+                    <form action="">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit">Đăng ký nhận tin</button>
+                    </form>
+                </div>
+                <div class="block uk-visible@m">
+                    <h4 class="title">LIÊN KẾT VỚI CHÚNG TÔI</h4>
+                    <div class="wrapper-iframe">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flienkettreteam%2F&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&adapt_container_width=true&show_facepile=true&appId=239896576914077"
+                            width="340" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="block">
+                    <h4 class="title">LIÊN HỆ</h4>
+                    <p>Team Liên Kết Trẻ<br> Hotline: 0985 984 021<br> Email: info@lienkettre.com<br> Website: www.lienkettre.com</p>
+                    <div class="wrapper-card">
+                        <img src="../image/icon-cc-visa.png" alt="Visa">
+                        <img src="../image/icon-cc-mastercard.png" alt="Mastercard">
+                        <img src="../image/icon-cc-amex.png" alt="American Express">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="uk-container">
+                <p>Bản quyền được đăng ký © 2020 cho LKT-Business | Powered by Haravan</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <!-- jQuery first, then Popper -->
+    <script src="../assets/jquery3.2.1/jquery3.2.1.min.js"></script>
+    <script src="../assets/popper/popper.min.js"></script>
+    <script src="../assets/slick/slick.min.js"></script>
+    <script src="../assets/uikit-3.4.1/js/uikit.min.js"></script>
+    <script src="../assets/uikit-3.4.1/js/uikit-icons.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>
