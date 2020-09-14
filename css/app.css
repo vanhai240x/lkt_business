@@ -2060,6 +2060,9 @@ ul {
   top: 5px;
   right: 0;
 }
+.products-detail .fb-comments iframe {
+  width: 100%;
+}
 
 @media (min-width: 640px) {
   #products .wrapper-item {
