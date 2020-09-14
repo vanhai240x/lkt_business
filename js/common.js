@@ -1,6 +1,5 @@
 var options = {
     width: 600,
-    // height: 400,
     zoomWidth: 400,
     offset: { vertical: 0, horizontal: 10 },
 };
@@ -46,14 +45,10 @@ $(document).ready(() => {
         ]
     });
     scroolDown();
-    // jQuery.noConflict();
-    // $(".jqzoom").jqzoom({
-    //     zoomType: 'standard', // zoom type
-    //     lens: true,
-    //     preloadImages: false,
-    //     alwaysOn: false
-    // });
-    new ImageZoom(document.getElementById("main-image"), options);
+    var mainImage = $('#main-image');
+    if (mainImage.length > 0) {
+        new ImageZoom(document.getElementById("main-image"), options);
+    }
 })
 
 function scroolDown() {
