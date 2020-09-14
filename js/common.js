@@ -3,6 +3,8 @@ var options = {
     zoomWidth: 400,
     offset: { vertical: 0, horizontal: 10 },
 };
+var cartCountValue = 0;
+var cartCount = $('.header .cart .number');
 $(document).ready(() => {
     $(".partner .regular").slick({
         dots: false,
@@ -49,6 +51,17 @@ $(document).ready(() => {
     if (mainImage.length > 0) {
         new ImageZoom(document.getElementById("main-image"), options);
     }
+})
+
+$('.addToCart').click(function() {
+    cartCountValue++;
+    $(cartCount).text(cartCountValue);
+    $('.header .cart').addClass('shake');
+    $(this).addClass('add');
+    setTimeout(function() {
+        $('.addToCart').removeClass('add');
+        $('.header .cart').removeClass('shake');
+    }, 1000)
 })
 
 function scroolDown() {

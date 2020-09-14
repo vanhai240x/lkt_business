@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../css/app.css">
 
-    <title>Tất Cả Sản Phẩm</title>
+    <title>Tìm Kiếm</title>
 </head>
 
 <body>
@@ -113,7 +113,7 @@
                             <a href="/services">Dịch Vụ</a>
                         </li>
                         <li>
-                            <a class="active" href="/products">Sản phẩm</a>
+                            <a href="/products">Sản phẩm</a>
                         </li>
                         <li>
                             <a href="/news">Tin Tức</a>
@@ -132,146 +132,16 @@
     </header>
     <!-- End: Header -->
 
-    <div id="products">
+    <div id="search">
         <div class="uk-container">
+            <h1 class="archive-title"><span>Kết quả tìm kiếm</span></h1>
             <div class="content">
-                <ul class="breadcrumb">
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tất Cả Sản Phẩm</a></li>
-                    <li>Trang 1/2</li>
-                </ul>
-                <div class="line-1 uk-flex uk-flex-between">
-                    <h1>Tất Cả Sản Phẩm</h1>
-                    <div class="wrapper-btn">
-                        <button class="grid-view active" onclick="viewGrid()"><i class="fa fa-th" aria-hidden="true"></i></button>
-                        <button class="list-view" onclick="viewList()"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+                <a href="/products/detail" class="item uk-flex">
+                    <div class="wrap-img">
+                        <img src="../image/web-site-ban-hang-02_large.jpg" alt="">
                     </div>
-                </div>
-                <div class="wrapper-item">
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/website-san-pham-1_large.png" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 01</a>
-                            <p class="price italic">Giá: vui lòng liên hệ</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/web-site-ban-hang-02_large.jpg" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 02</a>
-                            <p class="price">1,000,000₫</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/website-ban-hang-03_large.jpg" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 03</a>
-                            <p class="price">1,000,000₫</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/website-doanh-nghiep-01_large.png" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 01</a>
-                            <p class="price">1,000,000₫</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/website-ban-hang-03_large.jpg" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 03</a>
-                            <p class="price">1,000,000₫</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="/products/detail"><img src="../image/website-doanh-nghiep-01_large.png" alt=""></a>
-                        <div class="wrapper">
-                            <a class="name" href="/products/detail">Website Bán Hàng 01</a>
-                            <p class="price">1,000,000₫</p>
-                            <div class="wrapper-btn uk-flex uk-flex-middle uk-flex-center">
-                                <button class="addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</button>
-                                <a href="/products/detail" class="btn">Chi tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="navigation uk-flex uk-flex-center uk-flex-middle">
-                    <span class="pages">Trang 1/2</span>
-                    <span class="page-node page-number current">1</span>
-                    <a class="page-node page-number" href="#">2</a>
-                    <a class="next" href="#"><i class="fa fa-angle-right"></i><span> Sau</span></a>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="tab">
-                    <h1>Danh Mục Sản Phẩm</h1>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Tất cả Mẫu Website</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Website Doanh Nghiệp</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Website Bán Hàng</a>
-                        </li>
-                    </ul>
-                    <h3 class="title">Hỗ Trợ Trực Tuyến</h3>
-                    <div class="staff">
-                        <p class="red">Mr. Tin</p>
-                        <a href="#"><img src="../../image/yahoo.png" alt="Yahoo"></a>
-                        <a href="#"><img src="../../image/skype.png" alt="Skype"></a>
-                        <p>Điện thoại:
-                            <a href="tel:+0985 984 021">0985 984 021</a>
-                        </p>
-                    </div>
-                    <div class="work-time">
-                        <p><b>Thời gian làm việc</b></p>
-                        <p>Bất cứ khi nào bạn cần, hỗ trợ 24/7, 7 ngày trong tuần</p>
-                    </div>
-                    <h3 class="title">Mẫu Website Chọn Nhiều</h3>
-                    <div class="item uk-flex visible-bottom-to-top">
-                        <a href="#" class="img"><img src="../image/website-san-pham-1_large.png" alt=""></a>
-                        <div class="content">
-                            <a href="#" class="p1">Website Doanh Nghiệp 01</a>
-                            <p class="p2">1,000,000₫</p>
-                        </div>
-                    </div>
-                    <div class="item uk-flex visible-bottom-to-top">
-                        <a href="#" class="img"><img src="../image/website-doanh-nghiep-01_large.png" alt=""></a>
-                        <div class="content">
-                            <a href="#" class="p1">Website Doanh Nghiệp 02</a>
-                            <p class="p3">Giá: vui lòng liên hệ</p>
-                        </div>
-                    </div>
-                    <div class="item uk-flex visible-bottom-to-top">
-                        <a href="#" class="img"><img src="../image/website-ban-hang-03_large.jpg" alt=""></a>
-                        <div class="content">
-                            <a href="#" class="p1">Website Doanh Nghiệp 03</a>
-                            <p class="p2">1,000,000₫</p>
-                        </div>
-                    </div>
-                </div>
+                    <p>Website Bán Hàng 01</p>
+                </a>
             </div>
         </div>
     </div>
@@ -280,8 +150,8 @@
     <footer class="footer">
         <div class="partner">
             <div class="uk-container">
-                <h3 class="section-title visible-top-to-bottom">ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI</h3>
-                <section class="regular visible-bottom-to-top">
+                <h3 class="section-title">ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI</h3>
+                <section class="regular">
                     <div class="item"><img src="../image/5giay_hover_large.png" alt=""></div>
                     <div class="item"><img src="../image/ahamove_hover_large.png" alt=""></div>
                     <div class="item"><img src="../image/cafebizlogo_large.png" alt=""></div>
